@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "TradingView Stock API Runner",
+  "version": "1.0",
+  "description": "Fetch and display stock information from TradingView and an external API.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },"web_accessible_resources": [
+    {
+      "resources": [
+        "data/*",           
+        "symbol_info/*"     
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
